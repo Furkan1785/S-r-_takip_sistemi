@@ -21,15 +21,15 @@ Sürü Can, çiftçilerin hayvan varlıklarını dijital ortamda profesyonelce y
 ## 📸 Ekran Görüntüleri
 
 <p align="center">
-  <img src="![WhatsApp Image 2026-04-13 at 16 43 43](https://github.com/user-attachments/assets/699d9408-fe2a-428a-9e44-40da349b38a9)
+  <img src="![WhatsApp Image 2026-04-13 at 16 38 57](https://github.com/user-attachments/assets/42260e0d-7518-4b23-93df-68e9812eeb8a)
 " width="300" title="Uygulama Ana Ekranı">
-  <img src="![WhatsApp Image 2026-04-13 at 16 38 57 (3)](https://github.com/user-attachments/assets/152090ec-2dfa-4c9f-9a8d-e3e3b013fa5b)
+  <img src="![WhatsApp Image 2026-04-13 at 16 38 57 (1)](https://github.com/user-attachments/assets/fd13946b-9ddd-4325-8a61-fd43cb9aac47)
 " width="300" title="Hayvan Ekleme Ekranı">
-  <img src="![WhatsApp Image 2026-04-13 at 16 38 57 (2)](https://github.com/user-attachments/assets/66b44404-3685-4a74-bb51-b86846cf08f1)
+  <img src="![WhatsApp Image 2026-04-13 at 16 38 57 (2)](https://github.com/user-attachments/assets/e7945314-9006-487e-969c-d43af4d9530c)
 " width="300" title="Hayvan Ekleme Ekranı">
-  <img src="![WhatsApp Image 2026-04-13 at 16 38 57 (1)](https://github.com/user-attachments/assets/9551475b-4cb5-45ba-bbec-2b11edeed5f1)
+  <img src="![WhatsApp Image 2026-04-13 at 16 38 57 (3)](https://github.com/user-attachments/assets/ead9a023-a34d-4107-9d93-f560072dbb94)
 " width="300" title="Hayvan Ekleme Ekranı">
-  <img src="![WhatsApp Image 2026-04-13 at 16 38 57](https://github.com/user-attachments/assets/d0192eaa-a07a-4e35-8333-839845ca695d)
+  <img src="![WhatsApp Image 2026-04-13 at 16 43 43](https://github.com/user-attachments/assets/2bb96a66-ac52-4ac3-87ef-efa715cd6d2d)
 " width="300" title="Hayvan Ekleme Ekranı">
 
 </p>
