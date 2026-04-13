@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_location"
+        android:icon="@drawable/lokasyonresmi"
+        android:title="veteriner" />
+
+    <item
+        android:id="@+id/nav_add_animal"
+        android:icon="@drawable/eklemeisaret"
+        android:title="Ekle" />
+
+    <item
+        android:id="@+id/nav_sut_genel"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Süt Durumu" />
+    <item
+        android:id="@+id/nav_piyasa"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Piyasa" />
+
+</menu>

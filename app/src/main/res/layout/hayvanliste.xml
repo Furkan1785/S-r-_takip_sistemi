@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#F5F5F5"> <TextView
+    android:id="@+id/tvListeBaslik"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Listem"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:textColor="#303F9F"
+    android:layout_marginBottom="10dp"
+    android:layout_gravity="center_horizontal"/> <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewHayvan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:queryHint="Küpe No veya İsim Ara..."
+        app:iconifiedByDefault="false"/>
+</androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Sürü Can</string>
+    <string name="app_logo">Uygulama Logosu</string>
+    <string name="farm_app_title">Çiftlik Yönetim Sistemi</string>
+
+    <string name="l_tfen_giri_yap_n_veya_kaydolun">Hoş Geldiniz, Lütfen Giriş Yapın</string>
+    <string name="e_posta">E-posta</string>
+    <string name="ifre">Şifre</string>
+    <string name="ifre_min_6_karakter">Şifre (min. 6 karakter)</string>
+
+    <string name="g_r_yap">Giriş Yap</string>
+    <string name="kayit_ol">Kayıt Ol</string>
+
+    <string name="kayit_ol_link">Kayıt OL</string>
+    <string name="girise_geri_don">Girişe geri dön</string>
+
+    <string name="iki_yap">Çıkış Yap</string>
+    <string name="ho_geld_n_kullanici">Hoş Geldiniz!</string>
+    <string name="_0">0</string>
+
+</resources>

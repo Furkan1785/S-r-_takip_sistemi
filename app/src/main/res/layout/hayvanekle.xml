@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA"
+    android:fillViewport="true"
+    tools:context=".HayvanEkle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yeni Hayvan Kaydı"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        app:cardCornerRadius="70dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#F5F5F5">
+                        <ImageView
+                            android:id="@+id/imgHayvanEkle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/cow" /> </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="25dp"
+                        app:cardBackgroundColor="#303F9F"
+                        android:layout_gravity="bottom|end"
+                        app:cardElevation="6dp">
+                        <ImageButton
+                            android:id="@+id/btnFotoSec"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?selectableItemBackground"
+                            android:padding="12dp"
+                            android:src="@android:drawable/ic_menu_camera"
+                            app:tint="@android:color/white"/>
+                    </androidx.cardview.widget.CardView>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="* Kulak Küpe No"
+                        android:textSize="12sp"
+                        android:textColor="#3949AB"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="4dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/edittext_solid_white_round"
+                        android:backgroundTint="#F0F1F5"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="12dp">
+
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextKupeNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="Örn: 105"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textColor="#333333"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:boxStrokeColor="#303F9F"
+                    android:hint="Takma Ad (Opsiyonel)">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextTakmaAd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeColor="#303F9F"
+                    android:hint="* Doğum Tarihi">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextDogumTarihi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:drawableEnd="@android:drawable/ic_menu_my_calendar"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tür ve Özellikler"
+                    android:textStyle="bold"
+                    android:textColor="#303F9F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    android:layout_marginBottom="15dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cinsiyet"
+                            android:textStyle="bold"
+                            android:textColor="#555"
+                            android:layout_marginBottom="5dp"/>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroupCinsiyet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/radioDişi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="♀️Dişi"
+                                android:buttonTint="#E91E63"/>
+                            <RadioButton
+                                android:id="@+id/radioErkek"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="♂️Erkek"
+                                android:buttonTint="#2196F3"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="* Ağırlık (kg)"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextAgirlik"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLength="5"
+                            android:inputType="numberDecimal"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hayvan Irkı (Cinsi):"
+                    android:textStyle="bold"
+                    android:textColor="#555"
+                    android:layout_marginBottom="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#F0F1F5"
+                    android:layout_marginBottom="15dp">
+                    <Spinner
+                        android:id="@+id/spinnerIrkCinsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hayvan Tipi:"
+                    android:textStyle="bold"
+                    android:textColor="#555"
+                    android:layout_marginBottom="5dp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:layout_marginBottom="15dp">
+                    <RadioGroup
+                        android:id="@+id/radioGroupTip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton android:id="@+id/radioInek" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🐮İnek" android:paddingEnd="1dp"/>
+                        <RadioButton android:id="@+id/radioDuve" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🐄Düve" android:paddingEnd="1dp"/>
+                        <RadioButton android:id="@+id/radioDana" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🐂Dana" android:paddingEnd="1dp"/>
+                        <RadioButton android:id="@+id/radioBuzagi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🍼Buzağı" android:paddingEnd="1dp"/>
+                    </RadioGroup>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anlık Durum:"
+                    android:textStyle="bold"
+                    android:textColor="#555"
+                    android:layout_marginBottom="5dp"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroupDurum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+                    <RadioButton android:id="@+id/radioNormal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Normal" android:checked="true"/>
+                    <RadioButton android:id="@+id/radioSagimda" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🐮🥛Sağımda" />
+                    <RadioButton android:id="@+id/radioGebe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🐮🤰Gebe"/>
+                    <RadioButton android:id="@+id/radioKuruda" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🐮💤Kuruda"/>
+                </RadioGroup>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/layoutGebeTarih"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#E8F5E9"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tohumlama Tarihi:"
+                            android:textStyle="bold"
+                            android:textColor="#2E7D32"/>
+
+                        <EditText
+                            android:id="@+id/etTohumlamaTarihi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Tarih Seçiniz"
+                            android:inputType="date"
+                            android:background="@null"
+                            android:textSize="18sp"
+                            android:paddingTop="5dp"
+                            android:focusable="false"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white"
+            android:layout_marginBottom="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sağlık ve Diğer"
+                    android:textStyle="bold"
+                    android:textColor="#303F9F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="15dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkHastaGecmis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hasta mı?"
+                    android:buttonTint="#D32F2F"/>
+
+                <CheckBox
+                    android:id="@+id/checkAsiDurumu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Temel aşıları tamamlandı mı?"
+                    android:buttonTint="#4CAF50"
+                    android:layout_marginBottom="15dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Özel Notlar (Opsiyonel)"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginBottom="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextNotlar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:maxLength="50"
+                        android:lines="3"
+                        android:gravity="top|start"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/buttonSaveAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="HAYVANI KAYDET"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#4CAF50"
+            app:cornerRadius="15dp"
+            android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+</ScrollView>

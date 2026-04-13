@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    tools:context=".HayvanDetayi">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigationView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp">
+
+                <ImageView
+                    android:id="@+id/imgDetayResim"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inekresmi"
+                    android:background="#E0E0E0"
+                    android:contentDescription="Hayvan Resmi" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="bottom"
+                    android:background="#40000000"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:padding="20dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/tvDetayAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yükleniyor..."
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🆔 Küpe No: "
+                        android:textStyle="bold"
+                        android:textColor="#757575"/>
+
+                    <TextView
+                        android:id="@+id/tvDetayKupe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="16sp"
+                        android:textColor="#555555"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="10dp"
+                android:alignmentMode="alignMargins">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="#FFFFFF">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🧬 Irk"
+                            android:textSize="12sp"
+                            android:textColor="#999"/>
+                        <TextView
+                            android:id="@+id/tvDetayIrk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#333"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="#FFFFFF">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⚧ Cinsiyet"
+                            android:textSize="12sp"
+                            android:textColor="#999"/>
+                        <TextView
+                            android:id="@+id/tvDetayCinsiyet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#333"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="#FFFFFF">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🎂 Doğum"
+                            android:textSize="12sp"
+                            android:textColor="#999"/>
+                        <TextView
+                            android:id="@+id/tvDetayDogum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#333"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="#FFFFFF">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="📊 Durum"
+                            android:textSize="12sp"
+                            android:textColor="#999"/>
+                        <TextView
+                            android:id="@+id/tvDetayDurum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#2E7D32"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="#FFFFFF">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⚖️ Ağırlık"
+                            android:textSize="12sp"
+                            android:textColor="#999"/>
+                        <TextView
+                            android:id="@+id/tvDetayKilo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#333"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#FFF8E1">
+                <TextView
+                    android:id="@+id/tvDetayAsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aşı Durumu: Yükleniyor..."
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#F57C00"
+                    android:gravity="center"
+                    android:padding="12dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardGebelik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="#E8F5E9"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🤰 Gebelik Takibi"
+                        android:textStyle="bold"
+                        android:textColor="#2E7D32"/>
+
+                    <TextView
+                        android:id="@+id/tvGebelikBilgi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hesaplanıyor..."
+                        android:layout_marginTop="5dp"/>
+
+                    <ProgressBar
+                        android:id="@+id/progressBarGebelik"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:progressTint="#4CAF50"/>
+
+                    <TextView
+                        android:id="@+id/tvTahminiDogum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:gravity="end"
+                        android:textSize="12sp"
+                        android:textStyle="italic"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📝 Özel Notlar"
+                        android:textStyle="bold"
+                        android:textColor="#303F9F"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tvDetayNotlar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Not bulunmuyor."
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="5dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/btnSutEkle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🥛 Süt Ekle"
+                    android:backgroundTint="#2196F3"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:padding="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btnDuzenle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Düzenle"
+                    android:backgroundTint="#FF9800"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:padding="15dp"
+                    android:layout_marginStart="5dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bu Hayvanı Sil"
+                android:backgroundTint="#D32F2F"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="16dp"
+                android:padding="15dp"
+                android:layout_marginBottom="80dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

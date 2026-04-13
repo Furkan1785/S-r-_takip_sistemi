@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tarih:"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etSutTarih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:focusable="false"
+        android:hint="Tarih Seçin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miktar (Litre):"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/etSutMiktar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:maxLength="3"
+        android:hint="Örn: 20.5"/>
+</LinearLayout>

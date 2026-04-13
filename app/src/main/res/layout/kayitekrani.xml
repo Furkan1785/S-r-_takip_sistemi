@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_purple_gradient_bg"
+    tools:context=".Kayıt">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="124dp"
+        android:alpha="0.8"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/kayit_ol"
+        android:textColor="@color/text_main_dark_blue"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/card_background_light_blue"
+        app:layout_constraintTop_toBottomOf="@+id/text_register_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+
+            <EditText
+                android:id="@+id/editTextRegisterEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/e_posta"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_solid_white_round"
+                android:padding="14dp"
+                android:drawableStart="@drawable/email_blue"
+                android:drawablePadding="10dp"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/editTextRegisterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ifre_min_6_karakter"
+                android:inputType="textPassword"
+                android:background="@drawable/edittext_solid_white_round"
+                android:padding="14dp"
+                android:drawableStart="@drawable/kilitresmi"
+                android:drawablePadding="10dp"
+                android:layout_marginBottom="30dp"/>
+
+            <Button
+                android:id="@+id/buttonFinalSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kayit_ol_link"
+                android:backgroundTint="@color/button_green_solid"
+                android:textColor="@color/white"
+                android:paddingVertical="16dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:elevation="4dp"/>
+
+            <TextView
+                android:id="@+id/textBackToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/girise_geri_don"
+                android:textColor="@color/text_main_dark_blue"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

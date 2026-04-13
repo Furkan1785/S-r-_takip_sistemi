@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ECEFF1"> <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Yönetici Paneli"
+    android:textSize="28sp"
+    android:textStyle="bold"
+    android:textColor="#263238"
+    android:gravity="center"
+    android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcıyı silmek için üzerine uzun basın."
+        android:textSize="14sp"
+        android:textColor="#546E7A"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <ListView
+        android:id="@+id/listViewAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:dividerHeight="1dp"
+        android:divider="#CFD8DC"/>
+
+</LinearLayout>
